@@ -1,27 +1,34 @@
 import IdeSettings.packagePrefix
+import org.scalajs.sbtplugin.ScalaJSPlugin
 import sbt._
 import sbt.Keys._
 import sbtunidoc.BaseUnidocPlugin.autoImport.*
 import sbtunidoc.ScalaUnidocPlugin
 
-ThisBuild / scalaVersion := "3.9.0"
+val scala3 = "3.9.0"
 
-scalacOptions ++= Seq(
+ThisBuild / scalaVersion := scala3
+
+ThisBuild / scalacOptions ++= Seq(
   "-explain",
   "-explain-types",
   "-explain-cyclic",
+  "-deprecation",
+  "-feature",
+  "-unchecked",
+  "-Wunused:all",
 )
 
-lazy val `scala-library-template` = project
+// Named after the library so as not to clash with the projects of a build that
+// includes this one by reference.
+lazy val `laminar-components` = project
   .in(file("."))
-  .enablePlugins(ScalaUnidocPlugin)
+  .enablePlugins(ScalaJSPlugin, ScalaUnidocPlugin)
   .settings(
-    packagePrefix                          := "com.alecdorrington",
-    libraryDependencies += "org.scalameta" %% "munit" % "1.3.6" % Test,
-
-    // Workaround for an sbt 2.0.x classloader bug where in-process test runs
-    // can't see Test-scoped dependencies (NoClassDefFoundError: munit/FunSuite).
-    Test / fork := true,
+    name          := "laminar-components",
+    packagePrefix := "com.alecdorrington.laminarcomponents",
+    Dependencies.laminar,
+    Dependencies.munit,
     ScalaUnidoc / unidoc / scalacOptions ++=
-      Seq("-project", "Scala Library Template"),
+      Seq("-project", "Laminar Components"),
   )
