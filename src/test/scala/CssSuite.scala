@@ -101,6 +101,12 @@ class CssSuite extends FunSuite:
       ).mkString("\n"),
     )
 
+  test(
+    "A stylesheet added where there is no page, as on Node, is left as it was.",
+  ):
+    val sheet = Stylesheet(rule(".a")(color := "red"))
+    assert(sheet.added eq sheet)
+
   test("A layered stylesheet puts its rules in its layer."):
     assertEquals(
       Stylesheet.layered("parts")(rule(".a")(color := "red")).css,

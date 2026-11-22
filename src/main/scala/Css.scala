@@ -264,35 +264,23 @@ object Css:
     * attribute's value may hold one.
     */
   private def unquoted(selector: String): List[String] =
-    final case class Scan
-      (
-        done: List[String],
-        current: String,
-        quote: Option[Char],
-      )
-    val scanned = selector.foldLeft(Scan(Nil, "", None)): (scan, char) =>
-      scan.quote match
-        case Some(quote) => scan.copy(
-            current = scan.current :+ char,
-            quote = Option.when(char != quote)(quote),
-          )
-        case None => char match
-            case '"' | '\'' => scan.copy(
-                current = scan.current :+ char,
-                quote = Some(char),
-              )
-            case '&' => scan.copy(
-                done = scan.done :+ scan.current,
-                current = "",
-              )
-            case _ => scan.copy(current = scan.current :+ char)
-    scanned.done :+ scanned.current
+    parted(selector, (char, _) => char == '&')
 
   /**
     * Splits a selector list at its commas, but for those within brackets,
     * parentheses or quotes.
     */
   private[laminarcomponents] def listed(selectors: String): List[String] =
+    parted(
+      selectors,
+      (char, depth) => char == ',' && depth == 0,
+    ).map(_.trim).filter(_.nonEmpty)
+
+  /**
+    * Splits text at each character `at` accepts, given how deep within brackets
+    * and parentheses it lies, but for those within quotes.
+    */
+  private def parted(text: String, at: (Char, Int) => Boolean): List[String] =
     final case class Scan
       (
         done: List[String],
@@ -300,29 +288,26 @@ object Css:
         depth: Int,
         quote: Option[Char],
       )
-    val scanned = selectors.foldLeft(Scan(Nil, "", 0, None)): (scan, char) =>
+    val scanned = text.foldLeft(Scan(Nil, "", 0, None)): (scan, char) =>
       scan.quote match
         case Some(quote) => scan.copy(
             current = scan.current :+ char,
             quote = Option.when(char != quote)(quote),
           )
-        case None => char match
-            case '"' | '\'' => scan.copy(
-                current = scan.current :+ char,
-                quote = Some(char),
-              )
-            case '(' | '[' => scan.copy(
-                current = scan.current :+ char,
-                depth = scan.depth + 1,
-              )
-            case ')' | ']' => scan.copy(
-                current = scan.current :+ char,
-                depth = scan.depth - 1,
-              )
-            case ',' if scan.depth == 0 =>
-              scan.copy(
-                done = scan.done :+ scan.current.trim,
-                current = "",
-              )
-            case _ => scan.copy(current = scan.current :+ char)
-    (scanned.done :+ scanned.current.trim).filter(_.nonEmpty)
+        case None if at(char, scan.depth) =>
+          scan.copy(
+            done = scan.done :+ scan.current,
+            current = "",
+          )
+        case None => scan.copy(
+            current = scan.current :+ char,
+            depth = scan.depth + nesting(char),
+            quote = Option.when(char == '"' || char == '\'')(char),
+          )
+    scanned.done :+ scanned.current
+
+  /** The change a character makes to the depth of brackets. */
+  private def nesting(char: Char): Int = char match
+    case '(' | '[' => 1
+    case ')' | ']' => -1
+    case _         => 0

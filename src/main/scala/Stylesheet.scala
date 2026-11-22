@@ -3,11 +3,13 @@ package com.alecdorrington.laminarcomponents
 import com.raquo.laminar.modifiers.Modifier
 import com.raquo.laminar.nodes.ReactiveElement
 import org.scalajs.dom
+import scala.scalajs.js
 
 /**
   * A stylesheet written in Scala ([[Css]]), kept beside the view it styles and
   * given to the view's element as a modifier: the first element given it adds
-  * it to the page's head, where it stays.
+  * it to the page's head, where it stays. A view whose classes many helpers
+  * draw may instead add it as the view's object is first used ([[added]]).
   *
   * @param layer
   *   The cascade layer its rules go in, if any. Rules in no layer outweigh
@@ -28,14 +30,27 @@ final class Stylesheet private (
     layer.fold(rules)(name => s"@layer $name {\n$rules\n}")
 
   /** The stylesheet's element in the page's head, added when first read. */
-  private lazy val added: dom.Node =
+  private lazy val element: dom.Node =
     val style = dom.document.createElement("style")
     layer.foreach(style.setAttribute("data-layer", _))
     style.textContent = css
     dom.document.head.appendChild(style)
 
   /** Adds the stylesheet to the page's head, unless it is there already. */
-  def add(): Unit = added: Unit
+  def add(): Unit = element: Unit
+
+  /**
+    * Adds the stylesheet to the page's head now, unless there is no page, as in
+    * tests run on Node. A view holding its stylesheet as a value of its object
+    * adds it so, as the view is first used, whichever of its elements is first
+    * drawn.
+    *
+    * @return
+    *   The stylesheet.
+    */
+  def added: Stylesheet =
+    if js.typeOf(js.Dynamic.global.document) != "undefined" then add()
+    this
 
   /**
     * Adds the stylesheet as its element is made.

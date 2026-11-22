@@ -17,6 +17,9 @@ final class PageBadge(icon: String):
 
   private val size = 64
 
+  /** The attributes of an icon link that drawing the count changes. */
+  private val swapped = List("href", "type", "sizes")
+
   /** The page's icon links, each with the attributes to restore. */
   private lazy val links: List[(dom.Element, Map[String, String])] =
     val found = dom.document.querySelectorAll("link[rel~='icon']")
@@ -24,9 +27,10 @@ final class PageBadge(icon: String):
       .toList
       .map(found(_))
       .map(link =>
-        link -> List("href", "type", "sizes")
-          .flatMap(name => Option(link.getAttribute(name)).map(name -> _))
-          .toMap,
+        link ->
+          swapped
+            .flatMap(name => Option(link.getAttribute(name)).map(name -> _))
+            .toMap,
       )
 
   /** The page's own icon, drawn once loaded. */
@@ -96,7 +100,7 @@ final class PageBadge(icon: String):
       link.removeAttribute("sizes")
 
   private def restore(): Unit = links.foreach: (link, original) =>
-    List("href", "type", "sizes").foreach(name =>
+    swapped.foreach(name =>
       original
         .get(name)
         .fold(link.removeAttribute(name))(link.setAttribute(name, _)),
