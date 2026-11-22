@@ -1,0 +1,3848 @@
+<!DOCTYPE html><html data-pathToRoot="../../../" data-rawLocation="com/alecdorrington/laminarcomponents/CssProps$" data-dynamicSideMenu="false"><head><meta charset="utf-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta><title>CssProps</title><link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico"></link><script type="text/javascript" src="../../../scripts/theme.js"></script><script type="text/javascript" src="../../../scripts/searchData.js" defer="true"></script><script type="text/javascript" src="../../../scripts/scastieConfiguration.js" defer="true"></script><link rel="stylesheet" href="../../../styles/theme/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/components/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/components/button/bundle.css"></link><link rel="stylesheet" href="../../../styles/theme/layout/bundle.css"></link><link rel="stylesheet" href="../../../styles/dotty-icons.css"></link><link rel="stylesheet" href="../../../styles/filter-bar.css"></link><link rel="stylesheet" href="../../../styles/searchbar.css"></link><link rel="stylesheet" href="../../../styles/social-links.css"></link><link rel="stylesheet" href="../../../styles/versions-dropdown.css"></link><link rel="stylesheet" href="../../../styles/content-contributors.css"></link><script type="text/javascript" src="../../../hljs/highlight.pack.js" defer="true"></script><script type="text/javascript" src="../../../scripts/hljs-scala3.js" defer="true"></script><script type="text/javascript" src="../../../scripts/ux.js" defer="true"></script><script type="text/javascript" src="../../../scripts/common/component.js" defer="true"></script><script type="text/javascript" src="../../../scripts/common/utils.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/FilterBar.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/DocumentableList.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/Input.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/FilterGroup.js" defer="true"></script><script type="text/javascript" src="../../../scripts/components/Filter.js" defer="true"></script><script type="text/javascript" src="../../../scripts/scaladoc-scalajs.js" defer="true"></script><script type="text/javascript" src="../../../scripts/contributors.js" defer="true"></script><script type="text/javascript" src="https://d3js.org/d3.v6.min.js" defer="true"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/graphlib-dot@0.6.2/dist/graphlib-dot.min.js" defer="true"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js" defer="true"></script><script type="text/javascript" src="https://scastie.scala-lang.org/embedded.js" defer="true"></script><script type="text/javascript" src="../../../scripts/data.js" defer="true"></script><script>var pathToRoot = "../../../";</script></head><body><div id=""><div id="header" class="body-small"><div class="header-container-left"><a href="../../../" class="logo-container"><span class="project-name h300">Laminar Components</span></a><span onclick="dropdownHandler(event)" class="text-button with-arrow" id="dropdown-trigger"><a></a></span><div id="version-dropdown" class="dropdown-menu"></div></div><div class="header-container-right"><button id="search-toggle" class="icon-button"></button><span id="theme-toggle" class="icon-button"></span><span id="mobile-menu-toggle" class="icon-button hamburger"></span></div></div><div id="mobile-menu"><div class="mobile-menu-header body-small"><span class="mobile-menu-logo"><span class="project-name h300">Laminar Components</span></span><button id="mobile-menu-close" class="icon-button close"></button></div><div class="mobile-menu-container body-medium"><input id="mobile-scaladoc-searchbar-input" class="scaladoc-searchbar-input" type="search" placeholder="Find anything"></input><span id="mobile-theme-toggle" class="mobile-menu-item mode"></span></div></div><span id="mobile-sidebar-toggle" class="floating-button"></span><div id="leftColumn" class="body-small"><div class="switcher-container"><a id="api-nav-button" class="switcher h100 selected" href="../../../index.html">API</a></div><nav id="api-nav" class="side-menu"><div class="ni n0 expanded"><span class="nh h100 expanded cs"><button class="ar icon-button expanded"></button><a href="../laminarcomponents.html"><span class="micon pa"></span><span>com.alecdorrington.laminarcomponents</span></a></span><div class="ni n1 "><span class="nh "><a href="Baseline$.html"><span class="micon ob"></span><span>Baseline</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Chime.html"><span class="micon cl"></span><span>Chime</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="ColourPicker$.html"><span class="micon ob"></span><span>ColourPicker</span></a></span><div class="ni n2 "><span class="nh "><a href="ColourPicker$$Labels.html"><span class="micon cl"></span><span>Labels</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="ConfirmDialog$.html"><span class="micon ob"></span><span>ConfirmDialog</span></a></span><div class="ni n2 "><span class="nh "><a href="ConfirmDialog$$Answer.html"><span class="micon cl"></span><span>Answer</span></a></span></div><div class="ni n2 "><span class="nh "><a href="ConfirmDialog$$Confirmation.html"><span class="micon cl"></span><span>Confirmation</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Css$.html"><span class="micon ob"></span><span>Css</span></a></span><div class="ni n2 "><span class="nh "><a href="Css$$Block.html"><span class="micon tr"></span><span>Block</span></a></span></div><div class="ni n2 "><span class="nh "><a href="Css$$Conditional.html"><span class="micon cl"></span><span>Conditional</span></a></span></div><div class="ni n2 "><span class="nh "><a href="Css$$FontFace.html"><span class="micon cl"></span><span>FontFace</span></a></span></div><div class="ni n2 "><span class="nh "><a href="Css$$Keyframes.html"><span class="micon cl"></span><span>Keyframes</span></a></span></div><div class="ni n2 "><span class="nh "><a href="Css$$Rule.html"><span class="micon cl"></span><span>Rule</span></a></span></div></div><div class="ni n1 expanded"><span class="nh h100 selected"><a href="#"><span class="micon ob"></span><span>CssProps</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Dropdown$.html"><span class="micon ob"></span><span>Dropdown</span></a></span></div><div class="ni n1 "><span class="nh "><a href="FieldText$.html"><span class="micon ob"></span><span>FieldText</span></a></span></div><div class="ni n1 "><span class="nh "><a href="FieldText.html"><span class="micon cl"></span><span>FieldText</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Glide$.html"><span class="micon ob"></span><span>Glide</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Handover$.html"><span class="micon ob"></span><span>Handover</span></a></span><div class="ni n2 "><span class="nh "><a href="Handover$$Pending.html"><span class="micon cl"></span><span>Pending</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="Hsv.html"><span class="micon cl"></span><span>Hsv</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Hsv$.html"><span class="micon ob"></span><span>Hsv</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Menu$.html"><span class="micon ob"></span><span>Menu</span></a></span></div><div class="ni n1 "><span class="nh "><a href="NumberInput$.html"><span class="micon ob"></span><span>NumberInput</span></a></span></div><div class="ni n1 "><span class="nh "><a href="PageBadge.html"><span class="micon cl"></span><span>PageBadge</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Reordering.html"><span class="micon cl"></span><span>Reordering</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Reordering$.html"><span class="micon ob"></span><span>Reordering</span></a></span><div class="ni n2 "><span class="nh "><a href="Reordering$$Extent.html"><span class="micon cl"></span><span>Extent</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Requests$.html"><span class="micon ob"></span><span>Requests</span></a></span><div class="ni n2 "><span class="nh "><a href="Requests$$Serial.html"><span class="micon cl"></span><span>Serial</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="Router.html"><span class="micon cl"></span><span>Router</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Streaming$.html"><span class="micon ob"></span><span>Streaming</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="Streaming$$Event.html"><span class="micon en"></span><span>Event</span></a></span><div class="ni n3 "><span class="nh "><a href="Streaming$$Event$$Line.html"><span class="micon cl"></span><span>Line</span></a></span></div><div class="ni n3 "><span class="nh "><a href="Streaming$$Event$$Failed.html"><span class="micon cl"></span><span>Failed</span></a></span></div></div></div><div class="ni n1 "><span class="nh "><a href="Stylesheet$.html"><span class="micon ob"></span><span>Stylesheet</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Stylesheet.html"><span class="micon cl"></span><span>Stylesheet</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Switch$.html"><span class="micon ob"></span><span>Switch</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Tabs$.html"><span class="micon ob"></span><span>Tabs</span></a></span><div class="ni n2 "><span class="nh "><a href="Tabs$$Tab.html"><span class="micon cl"></span><span>Tab</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="TextCaret$.html"><span class="micon ob"></span><span>TextCaret</span></a></span><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="TextCaret$$Selection.html"><span class="micon en"></span><span>Selection</span></a></span><div class="ni n3 "><span class="nh "><a href="TextCaret$$Selection$$Span.html"><span class="micon cl"></span><span>Span</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="TextCaret$$Spot.html"><span class="micon cl"></span><span>Spot</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="TextCaret.html"><span class="micon cl"></span><span>TextCaret</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Theme$.html"><span class="micon ob"></span><span>Theme</span></a></span><div class="ni n2 "><span class="nh "><a href="Theme$$Token.html"><span class="micon cl"></span><span>Token</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="Toggle$.html"><span class="micon ob"></span><span>Toggle</span></a></span></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="Tooltip$.html"><span class="micon ob"></span><span>Tooltip</span></a></span><div class="ni n2 "><span class="nh "><a href="Tooltip$$Side.html"><span class="micon en"></span><span>Side</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="Visible$.html"><span class="micon ob"></span><span>Visible</span></a></span></div><div class="ni n1 "><span class="nh "><a href="Writes.html"><span class="micon cl"></span><span>Writes</span></a></span></div></div></nav></div><div id="footer" class="body-small"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div><div id="scaladoc-searchBar"></div><div id="main"><div class="breadcrumbs container"><a href="../../../index.html">Laminar Components</a>/<a href="../laminarcomponents.html">com.alecdorrington.laminarcomponents</a>/<a href="CssProps$.html">CssProps</a></div><div id="content" class="body-medium"><div><div class="cover-header">
+ <span class="icon"><span class="micon ob"></span></span>
+ <h1 class="h600 single">CssProps</h1>
+</div>
+<div class="fqname body-large">
+ <span>com.alecdorrington.laminarcomponents.CssProps</span>
+</div>
+<div class="main-signature mono-small-block">
+ <div class="signature">
+  <span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="CssProps$.html" t="n" class="documentableName ">CssProps</a>
+ </div>
+</div>
+<div class="cover">
+ <div class="doc">
+  <p>The style props Laminar lacks, among them the logical properties (which follow the text's direction), grid layout, and the font face descriptors (<a href="Css$.html#fontFace-fffff73e">Css.fontFace</a>), each set as Laminar's own are: <code>insetInlineStart.px(0)</code> will not do, as these take any value, so <code>insetInlineStart := "0"</code>.</p>
+  <p>Import them by name or all at once (<code>CssProps.*</code>): if Laminar gains one, the two clash where it is used, and this one should go. Two are named apart from attributes Laminar has: <code>translation</code> and <code>fontSource</code>.</p>
+ </div>
+ <section id="attributes">
+  <h2 class="h500">Attributes</h2>
+  <dl class="attributes">
+   <dt class="body-small">Graph</dt>
+   <dd class="body-medium">
+    <div id="inheritance-diagram" class="diagram-class showGraph">
+     <button type="button" class="label-only-button" onclick="zoomOut()">Reset zoom</button><button type="button" class="label-only-button" onclick="hideGraph()">Hide graph</button><button type="button" class="label-only-button" onclick="showGraph()">Show graph</button>
+     <svg id="graph"></svg>
+     <script type="text/dot" id="dot"> digraph g {
+ node0 [id=node0, label="<span style=\"color: #FFFFFF;\">object <a href=\"CssProps$.html\" t=\"n\">CssProps</a></span>", class="object vertex"];
+node1 [id=node1, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Object</span></span>", class="class vertex"];
+node2 [id=node2, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Any</span></span>", class="class vertex"];
+node3 [id=node3, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Matchable</span></span>", class="trait vertex"];
+
+
+ node0 -> node1;
+node1 -> node2;
+node1 -> node3;
+node3 -> node2;
+
+}
+</script>
+    </div>
+   </dd>
+   <dt class="body-small">Supertypes</dt>
+   <dd class="body-medium">
+    <div class="mono-small-block supertypes">
+     <div>
+      class <span data-unresolved-link="" t="n">Object</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Matchable</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Any</span>
+     </div>
+     <span></span>
+    </div>
+   </dd>
+   <dt class="body-small">Self type</dt>
+   <dd class="body-medium">
+    <div class="mono-small-block supertypes">
+     <span></span>
+     <div>
+      <a href="CssProps$.html" t="n">CssProps</a>.<span t="k">type</span>
+     </div>
+    </div>
+   </dd>
+  </dl>
+ </section>
+</div>
+<section id="members-list">
+ <h2 class="h500">Members list</h2>
+ <div class="documentableFilter">
+  <div class="filtersContainer"></div>
+  <input class="filterableInput" placeholder="Filter by any phrase" data-test-id="filterBarInput" type="search"><button class="clearButton label-only-button" data-test-id="filterBarClearButton">Clear all</button>
+ </div>
+ <div class="membersList expand">
+  <div class="tabs">
+   <div class="contents">
+    <section id="Value-members">
+     <div data-togglable="Value members" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Value members" class="h400">Value members</h3>
+      </div>
+      <section id="Concrete-fields">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Concrete fields</h4>
+        </div>
+        <div class="documentableElement" id="accentColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#accentColor-0" t="n" class="documentableName ">accentColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>accent-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>accent-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="appearance-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#appearance-0" t="n" class="documentableName ">appearance</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>appearance</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>appearance</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="aspectRatio-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#aspectRatio-0" t="n" class="documentableName ">aspectRatio</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>aspect-ratio</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>aspect-ratio</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="backdropFilter-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#backdropFilter-0" t="n" class="documentableName ">backdropFilter</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>backdrop-filter</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>backdrop-filter</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="blockSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#blockSize-0" t="n" class="documentableName ">blockSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>block-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>block-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlock-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlock-0" t="n" class="documentableName ">borderBlock</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockColor-0" t="n" class="documentableName ">borderBlockColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockEnd-0" t="n" class="documentableName ">borderBlockEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockEndColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockEndColor-0" t="n" class="documentableName ">borderBlockEndColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-end-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-end-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockEndWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockEndWidth-0" t="n" class="documentableName ">borderBlockEndWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-end-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-end-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockStart-0" t="n" class="documentableName ">borderBlockStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockStartColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockStartColor-0" t="n" class="documentableName ">borderBlockStartColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-start-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-start-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockStartWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockStartWidth-0" t="n" class="documentableName ">borderBlockStartWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-start-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-start-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderBlockWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderBlockWidth-0" t="n" class="documentableName ">borderBlockWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-block-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-block-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderEndEndRadius-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderEndEndRadius-0" t="n" class="documentableName ">borderEndEndRadius</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-end-end-radius</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-end-end-radius</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderEndStartRadius-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderEndStartRadius-0" t="n" class="documentableName ">borderEndStartRadius</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-end-start-radius</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-end-start-radius</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImage-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImage-0" t="n" class="documentableName ">borderImage</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImageOutset-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImageOutset-0" t="n" class="documentableName ">borderImageOutset</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image-outset</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image-outset</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImageRepeat-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImageRepeat-0" t="n" class="documentableName ">borderImageRepeat</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image-repeat</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image-repeat</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImageSlice-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImageSlice-0" t="n" class="documentableName ">borderImageSlice</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image-slice</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image-slice</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImageSource-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImageSource-0" t="n" class="documentableName ">borderImageSource</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image-source</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image-source</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderImageWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderImageWidth-0" t="n" class="documentableName ">borderImageWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-image-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-image-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInline-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInline-0" t="n" class="documentableName ">borderInline</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineColor-0" t="n" class="documentableName ">borderInlineColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineEnd-0" t="n" class="documentableName ">borderInlineEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineEndColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineEndColor-0" t="n" class="documentableName ">borderInlineEndColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-end-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-end-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineEndWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineEndWidth-0" t="n" class="documentableName ">borderInlineEndWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-end-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-end-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineStart-0" t="n" class="documentableName ">borderInlineStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineStartColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineStartColor-0" t="n" class="documentableName ">borderInlineStartColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-start-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-start-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineStartWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineStartWidth-0" t="n" class="documentableName ">borderInlineStartWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-start-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-start-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderInlineWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderInlineWidth-0" t="n" class="documentableName ">borderInlineWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-inline-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-inline-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderStartEndRadius-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderStartEndRadius-0" t="n" class="documentableName ">borderStartEndRadius</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-start-end-radius</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-start-end-radius</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="borderStartStartRadius-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#borderStartStartRadius-0" t="n" class="documentableName ">borderStartStartRadius</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>border-start-start-radius</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>border-start-start-radius</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="caretColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#caretColor-0" t="n" class="documentableName ">caretColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>caret-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>caret-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="clipPath-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#clipPath-0" t="n" class="documentableName ">clipPath</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>clip-path</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>clip-path</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="contain-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#contain-0" t="n" class="documentableName ">contain</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>contain</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>contain</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="container-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#container-0" t="n" class="documentableName ">container</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>container</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>container</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="containerName-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#containerName-0" t="n" class="documentableName ">containerName</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>container-name</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>container-name</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="containerType-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#containerType-0" t="n" class="documentableName ">containerType</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>container-type</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>container-type</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="fieldSizing-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#fieldSizing-0" t="n" class="documentableName ">fieldSizing</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>field-sizing</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>field-sizing</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="filter-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#filter-0" t="n" class="documentableName ">filter</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>filter</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>filter</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="fontDisplay-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#fontDisplay-0" t="n" class="documentableName ">fontDisplay</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>font-display</code> descriptor.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>font-display</code> descriptor.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="fontSource-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#fontSource-0" t="n" class="documentableName ">fontSource</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>src</code> descriptor of a font face (named apart from Laminar's <code>src</code> attribute).</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>src</code> descriptor of a font face (named apart from Laminar's <code>src</code> attribute).</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="fontVariantNumeric-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#fontVariantNumeric-0" t="n" class="documentableName ">fontVariantNumeric</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>font-variant-numeric</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>font-variant-numeric</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="fontVariationSettings-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#fontVariationSettings-0" t="n" class="documentableName ">fontVariationSettings</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>font-variation-settings</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>font-variation-settings</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="grid-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#grid-0" t="n" class="documentableName ">grid</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridArea-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridArea-0" t="n" class="documentableName ">gridArea</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-area</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-area</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridAutoColumns-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridAutoColumns-0" t="n" class="documentableName ">gridAutoColumns</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-auto-columns</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-auto-columns</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridAutoFlow-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridAutoFlow-0" t="n" class="documentableName ">gridAutoFlow</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-auto-flow</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-auto-flow</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridAutoRows-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridAutoRows-0" t="n" class="documentableName ">gridAutoRows</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-auto-rows</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-auto-rows</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridColumn-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridColumn-0" t="n" class="documentableName ">gridColumn</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-column</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-column</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridColumnEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridColumnEnd-0" t="n" class="documentableName ">gridColumnEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-column-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-column-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridColumnStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridColumnStart-0" t="n" class="documentableName ">gridColumnStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-column-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-column-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridRow-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridRow-0" t="n" class="documentableName ">gridRow</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-row</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-row</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridRowEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridRowEnd-0" t="n" class="documentableName ">gridRowEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-row-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-row-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridRowStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridRowStart-0" t="n" class="documentableName ">gridRowStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-row-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-row-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridTemplate-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridTemplate-0" t="n" class="documentableName ">gridTemplate</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-template</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-template</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridTemplateAreas-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridTemplateAreas-0" t="n" class="documentableName ">gridTemplateAreas</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-template-areas</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-template-areas</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridTemplateColumns-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridTemplateColumns-0" t="n" class="documentableName ">gridTemplateColumns</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-template-columns</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-template-columns</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="gridTemplateRows-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#gridTemplateRows-0" t="n" class="documentableName ">gridTemplateRows</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>grid-template-rows</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>grid-template-rows</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="hyphens-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#hyphens-0" t="n" class="documentableName ">hyphens</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>hyphens</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>hyphens</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="inlineSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#inlineSize-0" t="n" class="documentableName ">inlineSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inline-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inline-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="inset-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#inset-0" t="n" class="documentableName ">inset</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetBlock-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetBlock-0" t="n" class="documentableName ">insetBlock</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-block</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-block</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetBlockEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetBlockEnd-0" t="n" class="documentableName ">insetBlockEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-block-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-block-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetBlockStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetBlockStart-0" t="n" class="documentableName ">insetBlockStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-block-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-block-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetInline-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetInline-0" t="n" class="documentableName ">insetInline</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-inline</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-inline</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetInlineEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetInlineEnd-0" t="n" class="documentableName ">insetInlineEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-inline-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-inline-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="insetInlineStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#insetInlineStart-0" t="n" class="documentableName ">insetInlineStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>inset-inline-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>inset-inline-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="justifyItems-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#justifyItems-0" t="n" class="documentableName ">justifyItems</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>justify-items</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>justify-items</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="justifySelf-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#justifySelf-0" t="n" class="documentableName ">justifySelf</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>justify-self</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>justify-self</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="lineClamp-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#lineClamp-0" t="n" class="documentableName ">lineClamp</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>line-clamp</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>line-clamp</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginBlock-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginBlock-0" t="n" class="documentableName ">marginBlock</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-block</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-block</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginBlockEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginBlockEnd-0" t="n" class="documentableName ">marginBlockEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-block-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-block-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginBlockStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginBlockStart-0" t="n" class="documentableName ">marginBlockStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-block-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-block-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginInline-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginInline-0" t="n" class="documentableName ">marginInline</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-inline</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-inline</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginInlineEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginInlineEnd-0" t="n" class="documentableName ">marginInlineEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-inline-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-inline-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="marginInlineStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#marginInlineStart-0" t="n" class="documentableName ">marginInlineStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>margin-inline-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>margin-inline-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="maskImage-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#maskImage-0" t="n" class="documentableName ">maskImage</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>mask-image</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>mask-image</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="maxBlockSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#maxBlockSize-0" t="n" class="documentableName ">maxBlockSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>max-block-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>max-block-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="maxInlineSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#maxInlineSize-0" t="n" class="documentableName ">maxInlineSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>max-inline-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>max-inline-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="minBlockSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#minBlockSize-0" t="n" class="documentableName ">minBlockSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>min-block-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>min-block-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="minInlineSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#minInlineSize-0" t="n" class="documentableName ">minInlineSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>min-inline-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>min-inline-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="objectFit-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#objectFit-0" t="n" class="documentableName ">objectFit</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>object-fit</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>object-fit</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="objectPosition-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#objectPosition-0" t="n" class="documentableName ">objectPosition</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>object-position</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>object-position</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="outlineOffset-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#outlineOffset-0" t="n" class="documentableName ">outlineOffset</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>outline-offset</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>outline-offset</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="overscrollBehavior-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#overscrollBehavior-0" t="n" class="documentableName ">overscrollBehavior</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>overscroll-behavior</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>overscroll-behavior</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="overscrollBehaviorX-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#overscrollBehaviorX-0" t="n" class="documentableName ">overscrollBehaviorX</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>overscroll-behavior-x</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>overscroll-behavior-x</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="overscrollBehaviorY-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#overscrollBehaviorY-0" t="n" class="documentableName ">overscrollBehaviorY</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>overscroll-behavior-y</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>overscroll-behavior-y</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingBlock-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingBlock-0" t="n" class="documentableName ">paddingBlock</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-block</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-block</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingBlockEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingBlockEnd-0" t="n" class="documentableName ">paddingBlockEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-block-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-block-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingBlockStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingBlockStart-0" t="n" class="documentableName ">paddingBlockStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-block-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-block-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingInline-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingInline-0" t="n" class="documentableName ">paddingInline</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-inline</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-inline</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingInlineEnd-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingInlineEnd-0" t="n" class="documentableName ">paddingInlineEnd</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-inline-end</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-inline-end</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paddingInlineStart-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#paddingInlineStart-0" t="n" class="documentableName ">paddingInlineStart</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>padding-inline-start</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>padding-inline-start</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="placeContent-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#placeContent-0" t="n" class="documentableName ">placeContent</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>place-content</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>place-content</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="placeItems-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#placeItems-0" t="n" class="documentableName ">placeItems</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>place-items</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>place-items</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="placeSelf-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#placeSelf-0" t="n" class="documentableName ">placeSelf</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>place-self</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>place-self</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="rotate-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#rotate-0" t="n" class="documentableName ">rotate</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>rotate</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>rotate</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scale-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scale-0" t="n" class="documentableName ">scale</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scale</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scale</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollBehavior-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollBehavior-0" t="n" class="documentableName ">scrollBehavior</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scroll-behavior</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scroll-behavior</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollSnapAlign-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollSnapAlign-0" t="n" class="documentableName ">scrollSnapAlign</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scroll-snap-align</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scroll-snap-align</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollSnapType-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollSnapType-0" t="n" class="documentableName ">scrollSnapType</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scroll-snap-type</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scroll-snap-type</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollbarColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollbarColor-0" t="n" class="documentableName ">scrollbarColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scrollbar-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scrollbar-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollbarGutter-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollbarGutter-0" t="n" class="documentableName ">scrollbarGutter</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scrollbar-gutter</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scrollbar-gutter</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="scrollbarWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#scrollbarWidth-0" t="n" class="documentableName ">scrollbarWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>scrollbar-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>scrollbar-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="shapeRendering-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#shapeRendering-0" t="n" class="documentableName ">shapeRendering</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>shape-rendering</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>shape-rendering</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="stroke-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#stroke-0" t="n" class="documentableName ">stroke</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeDasharray-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeDasharray-0" t="n" class="documentableName ">strokeDasharray</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-dasharray</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-dasharray</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeDashoffset-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeDashoffset-0" t="n" class="documentableName ">strokeDashoffset</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-dashoffset</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-dashoffset</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeLinecap-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeLinecap-0" t="n" class="documentableName ">strokeLinecap</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-linecap</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-linecap</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeLinejoin-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeLinejoin-0" t="n" class="documentableName ">strokeLinejoin</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-linejoin</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-linejoin</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeOpacity-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeOpacity-0" t="n" class="documentableName ">strokeOpacity</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-opacity</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-opacity</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="strokeWidth-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#strokeWidth-0" t="n" class="documentableName ">strokeWidth</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>stroke-width</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>stroke-width</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="tabSize-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#tabSize-0" t="n" class="documentableName ">tabSize</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>tab-size</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>tab-size</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textDecorationColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textDecorationColor-0" t="n" class="documentableName ">textDecorationColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-decoration-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-decoration-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textDecorationLine-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textDecorationLine-0" t="n" class="documentableName ">textDecorationLine</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-decoration-line</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-decoration-line</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textDecorationStyle-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textDecorationStyle-0" t="n" class="documentableName ">textDecorationStyle</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-decoration-style</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-decoration-style</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textDecorationThickness-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textDecorationThickness-0" t="n" class="documentableName ">textDecorationThickness</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-decoration-thickness</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-decoration-thickness</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textUnderlineOffset-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textUnderlineOffset-0" t="n" class="documentableName ">textUnderlineOffset</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-underline-offset</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-underline-offset</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="textWrap-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#textWrap-0" t="n" class="documentableName ">textWrap</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>text-wrap</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>text-wrap</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="touchAction-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#touchAction-0" t="n" class="documentableName ">touchAction</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>touch-action</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>touch-action</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="translation-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#translation-0" t="n" class="documentableName ">translation</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>translate</code> property (named apart from Laminar's <code>translate</code> attribute).</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>translate</code> property (named apart from Laminar's <code>translate</code> attribute).</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="unicodeRange-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#unicodeRange-0" t="n" class="documentableName ">unicodeRange</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>unicode-range</code> descriptor.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>unicode-range</code> descriptor.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="userSelect-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#userSelect-0" t="n" class="documentableName ">userSelect</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>user-select</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>user-select</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitAppearance-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitAppearance-0" t="n" class="documentableName ">webkitAppearance</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-appearance</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-appearance</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitBoxOrient-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitBoxOrient-0" t="n" class="documentableName ">webkitBoxOrient</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-box-orient</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-box-orient</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitFontSmoothing-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitFontSmoothing-0" t="n" class="documentableName ">webkitFontSmoothing</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-font-smoothing</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-font-smoothing</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitLineClamp-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitLineClamp-0" t="n" class="documentableName ">webkitLineClamp</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-line-clamp</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-line-clamp</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitTapHighlightColor-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitTapHighlightColor-0" t="n" class="documentableName ">webkitTapHighlightColor</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-tap-highlight-color</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-tap-highlight-color</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitTextSizeAdjust-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitTextSizeAdjust-0" t="n" class="documentableName ">webkitTextSizeAdjust</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-text-size-adjust</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-text-size-adjust</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitTouchCallout-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitTouchCallout-0" t="n" class="documentableName ">webkitTouchCallout</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-touch-callout</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-touch-callout</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="webkitUserSelect-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#webkitUserSelect-0" t="n" class="documentableName ">webkitUserSelect</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>-webkit-user-select</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>-webkit-user-select</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="willChange-0" data-f-keywords="lazy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy </span></span><span class="kind"><span t="k">val </span></span><a href="CssProps$.html#willChange-0" t="n" class="documentableName ">willChange</a>: <span data-unresolved-link="" t="t">StyleProp</span>[<span data-unresolved-link="" t="t">String</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The <code>will-change</code> property.</p>
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The <code>will-change</code> property.</p>
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small"></dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+   </div>
+  </div>
+ </div>
+</section></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#attributes">Attributes</a></li><li><a href="#members-list">Members list</a><ul><li><a href="#Value-members">Value members</a><ul><li><a href="#Concrete-fields">Concrete fields</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>
