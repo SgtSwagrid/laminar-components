@@ -11,7 +11,47 @@ Keep it concise and actionable.
 
 ## Project overview
 
-This is a Scala library that does ...
+This is Laminar Components, a Scala.js library of components for [Laminar](https://laminar.dev/), styled in Scala. It is
+still a prototype.
+
+It is a single Scala.js module in `com.alecdorrington.laminarcomponents`, depending on Laminar alone.
+
+- Styling is Scala, never CSS files. `Css` builds rules (`rule`, `media`, `supports`, `keyframes`, `fontFace`) from
+  Laminar's own typed style setters, and `CssProps` holds the props Laminar lacks. `Css.render` writes nested rules out
+  whole (`&` for the outer selector, else a descendant; selector lists crossed), so no browser needs CSS nesting. A
+  `Stylesheet` is a `Modifier`: the first element given it adds it to the page's head, once, for good.
+- Each component keeps its stylesheet beside its view, as a `private val styles`, in the `Stylesheet.components`
+  cascade layer, so that any unlayered rule of the host's outweighs it. Its classes all begin `lc-`, and its scaladoc
+  lists them, as hosts restyle by them. Colours and shapes come from `Theme`'s tokens (`--lc-*`, each with a fallback),
+  read in rules as `Theme.accent.value`.
+- A component object's private vals must not take a style prop's name (`gap`, `margin`, `top`...): inside the object
+  they shadow Laminar's, and its stylesheet then fails to compile.
+- Values are encoded by `Css` itself (`String.valueOf`, a derived prop's `encode`), never by Laminar's `cssValue`,
+  which initialises `DomApi` and so needs a page: the tests run on Node, with no `document`.
+- Hosts supply all wording (`ConfirmDialog.host`'s cancel, `ColourPicker.Labels`), so that nothing here is in one
+  language.
+- Avoid names Laminar's `L` already has: they clash where both are imported whole. `CssProps.translation` and
+  `fontSource` are named apart from Laminar's `translate` and `src` attributes; `Css.media` is imported by name.
+
+See [README.md](README.md) for usage.
+
+### Where this code lives
+
+This repository is a mirror. The library is developed inside a larger private project, beneath `laminar-components/`,
+and every file here is copied from there by [GitHub Graph](https://github.com/SgtSwagrid/github-graph) whenever that
+project's `main` changes, overwriting whatever is here. So make changes there, never here. The shared configuration
+(workflows, Scalafmt, IDE settings, `project/plugins-common.sbt` and `project/plugins-library.sbt`) comes from further
+upstream still, in [Scala Library Config](https://github.com/SgtSwagrid/scala-library-config), which syncs into the
+private project's `laminar-components/` first. `build.sbt`, `release.sbt`, `project/Dependencies.scala`,
+`project/plugins-scalajs.sbt`, `README.md` and this file belong to the library.
+
+### Build
+
+- The root project `laminar-components` is the library itself, published as `laminar-components`, for Scala.js alone.
+  Its id is the library's name because the private project includes this build by reference
+  (`ProjectRef(file("laminar-components"), "laminar-components")`), alongside projects of its own.
+- The library must never depend on anything in the project that includes it.
+- Versions come from git tags (`sbt-ci-release`); publishing a GitHub release publishes to Maven Central.
 
 ## Instructions
 
@@ -32,6 +72,11 @@ This is a Scala library that does ...
 ### Code Style
 
 - You must read the [Code Style Guidelines](docs/STYLE_GUIDE.md).
+- Document every public type and member: a summary, then `@param` for each explicit parameter,
+  `@tparam` for each type parameter, and `@return` for any result but `Unit`, each one short
+  sentence. Summaries read: types "A ...", values "The ...", Booleans "Whether ...", methods a
+  third-person verb ("Sends ..."), never "Returns ...". Private members get a comment only for a
+  non-obvious contract or gotcha, usually in one sentence.
 
 ### Pull Requests
 
