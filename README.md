@@ -31,7 +31,9 @@ libraryDependencies += "com.alecdorrington" %% "laminar-components" % "{version}
 ## 🎨 Styling in Scala
 
 A [`Stylesheet`](src/main/scala/Stylesheet.scala) is a modifier: give it to the element of the view it styles,
-and the first element given it adds it to the page's head. Its rules are written with [`Css`](src/main/scala/Css.scala),
+and the first element given it adds it to the page's head. Or end it in `.added`, as a value of the view's object, to
+add it as the object is first used, which covers every helper of the view's at once (and does nothing where there is
+no page, as in tests on Node). Its rules are written with [`Css`](src/main/scala/Css.scala),
 in Laminar's style props, and those Laminar lacks (logical properties, grid layout and more) are in [`CssProps`](src/main/scala/CssProps.scala).
 
 ```scala
@@ -79,9 +81,9 @@ Stylesheet(rule(":root")(Theme.accent := "#0b7a75", Theme.radius := "4px"))
 | [`Tooltip`](src/main/scala/Tooltip.scala) | A hint shown on hover, keyboard focus or a tap, for any element | Mount `Tooltip.host` once at the root, so that no ancestor clips it. `Tooltip.whole` shows a text only while its element cuts it short. |
 | [`ConfirmDialog`](src/main/scala/ConfirmDialog.scala) | A question asked before something cannot be undone, or with several answers | Mount `ConfirmDialog.host` once at the root. Cancelling is the default; focus stays within it. |
 | [`Menu`](src/main/scala/Menu.scala) | A button opening a list of choices | Closed by a choice, a click elsewhere, or Escape. |
-| [`Dropdown`](src/main/scala/Dropdown.scala) | A `select` of typed options | Each option is sent under a code of yours. |
+| [`Dropdown`](src/main/scala/Dropdown.scala) | A `select` of typed options | Each option is sent under a code of yours, and matched by it; `changing` takes options that change, from a signal. |
 | [`Tabs`](src/main/scala/Tabs.scala) | Tabs over one pane at a time | Each pane is built when first opened and kept, so that a half-filled form survives. |
-| [`Switch`](src/main/scala/Switch.scala) | An on/off setting, as a slider or a tick box | |
+| [`Switch`](src/main/scala/Switch.scala) | An on/off setting, as a slider or a tick box | Either can be locked against changes. |
 | [`NumberInput`](src/main/scala/NumberInput.scala) | A number field with arrows of its own, which repeat while held | The same in every browser. `NumberInput.count` binds it to a whole count. |
 | [`ColourPicker`](src/main/scala/ColourPicker.scala) | A swatch opening a popover of swatches, shades, hues and a code | A colour is chosen only once a gesture settles, never mid-drag. [`Hsv`](src/main/scala/Hsv.scala) keeps a grey's hue. |
 | [`Glide`](src/main/scala/Glide.scala) | Elements sliding into new places after a change, rather than jumping there | Matched by keys of yours, so that an element drawn afresh slides as the one it replaced. Nothing moves for a reader who prefers reduced motion. |

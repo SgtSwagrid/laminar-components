@@ -27,6 +27,9 @@ object Switch:
     * @param flips
     *   The observer told of each change, `true` for on.
     *
+    * @param locked
+    *   Whether it cannot be changed.
+    *
     * @return
     *   The setting.
     */
@@ -36,6 +39,7 @@ object Switch:
       hint: String,
       on: Signal[Boolean],
       flips: Observer[Boolean],
+      locked: Signal[Boolean] = Val(false),
     )
     : HtmlElement = setting(
     "lc-switch",
@@ -43,6 +47,7 @@ object Switch:
     on,
     flips,
     role := "switch",
+    disabled <-- locked,
   )(
     span(cls := "lc-switch-track"),
     span(caption),
@@ -152,6 +157,7 @@ object Switch:
       rule("input:focus-visible + .lc-switch-track")(
         boxShadow := Theme.focusRing.value,
       ),
+      rule("&:has(input:disabled)")(opacity := 0.55, cursor := "default"),
     ),
     rule(".lc-switch-track")(
       position.relative,

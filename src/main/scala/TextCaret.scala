@@ -158,17 +158,16 @@ class TextCaret(aside: String):
     *   The span selected, a selection collapsed within the text, or one
     *   elsewhere.
     */
-  def selection(root: dom.Element): Selection =
-    Option(dom.window.getSelection()).filter(_.rangeCount > 0) match
-      case Some(selected)
-        if root.contains(selected.anchorNode) &&
-        root.contains(selected.focusNode) =>
-        if selected.isCollapsed then Selection.Cleared
-        else
-          ends(root, selected)
-            .filter(_ != _)
-            .fold(Selection.Cleared)(Selection.Span(_, _))
-      case _ => Selection.Elsewhere
+  def selection(root: dom.Element): Selection = TextCaret.selected match
+    case Some(selected)
+      if root.contains(selected.anchorNode) &&
+      root.contains(selected.focusNode) =>
+      if selected.isCollapsed then Selection.Cleared
+      else
+        ends(root, selected)
+          .filter(_ != _)
+          .fold(Selection.Cleared)(Selection.Span(_, _))
+    case _ => Selection.Elsewhere
 
   /**
     * Reads the page's selection within an element's text, collapsed where the
@@ -181,9 +180,9 @@ class TextCaret(aside: String):
     *   The offsets where the selection starts and ends, if it lies in the
     *   element.
     */
-  def range(root: dom.Element): Option[(Int, Int)] = Option(
-    dom.window.getSelection(),
-  ).filter(_.rangeCount > 0).flatMap(ends(root, _))
+  def range(root: dom.Element): Option[(Int, Int)] = TextCaret
+    .selected
+    .flatMap(ends(root, _))
 
   /** The offsets of a selection's ends, the earlier first. */
   private def ends
@@ -300,6 +299,10 @@ object TextCaret:
   /** Empties the page's selection. */
   def clear(): Unit =
     Option(dom.window.getSelection()).foreach(_.removeAllRanges())
+
+  /** The page's selection, unless it has no range. */
+  private def selected: Option[dom.Selection] =
+    Option(dom.window.getSelection()).filter(_.rangeCount > 0)
 
   private def texts(root: dom.Element): List[dom.Node] =
     val walker = dom

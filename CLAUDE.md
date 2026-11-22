@@ -19,7 +19,9 @@ It is a single Scala.js module in `com.alecdorrington.laminarcomponents`, depend
 - Styling is Scala, never CSS files. `Css` builds rules (`rule`, `media`, `supports`, `keyframes`, `fontFace`) from
   Laminar's own typed style setters, and `CssProps` holds the props Laminar lacks. `Css.render` writes nested rules out
   whole (`&` for the outer selector, else a descendant; selector lists crossed), so no browser needs CSS nesting. A
-  `Stylesheet` is a `Modifier`: the first element given it adds it to the page's head, once, for good.
+  `Stylesheet` is a `Modifier`: the first element given it adds it to the page's head, once, for good. `added` adds
+  it at once instead, as a value of a view's object, when the object is first used, and does nothing without a
+  `document` (Node), so that tests touching the object still run.
 - Each component keeps its stylesheet beside its view, as a `private val styles`, in the `Stylesheet.components`
   cascade layer, so that any unlayered rule of the host's outweighs it. Its classes all begin `lc-`, and its scaladoc
   lists them, as hosts restyle by them. Colours and shapes come from `Theme`'s tokens (`--lc-*`, each with a fallback),
